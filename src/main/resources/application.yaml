@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    function:
+      definition: "pingMsgConsumer"
+    stream:
+      bindings:
+        pingMsgConsumer-in-0:
+          destination: ping.out
+          group: kosinov_ping_out
+        ping-out-0:
+          destination: ping.out
