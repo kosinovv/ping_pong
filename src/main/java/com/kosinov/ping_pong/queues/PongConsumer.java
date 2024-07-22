@@ -1,7 +1,6 @@
 package com.kosinov.ping_pong.queues;
 
 import com.kosinov.ping_pong.model.Ping;
-import org.apache.logging.log4j.message.Message;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 

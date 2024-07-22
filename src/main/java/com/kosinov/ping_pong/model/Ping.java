@@ -1,9 +1,6 @@
 package com.kosinov.ping_pong.model;
 
-import lombok.Data;
-
 import java.time.LocalDateTime;
-import java.util.List;
 import java.util.Objects;
 
 public class Ping {
