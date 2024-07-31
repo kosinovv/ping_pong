@@ -1,11 +1,16 @@
 spring:
   cloud:
     function:
-      definition: "pingMsgConsumer"
+      definition: "pingMsgConsumer;pongMsgConsumer"
     stream:
       bindings:
         pingMsgConsumer-in-0:
           destination: ping.out
           group: kosinov_ping_out
+        pongMsgConsumer-in-0:
+          destination: pong.out
+          group: kosinov_pong_out
         ping-out-0:
           destination: ping.out
+        pong-out-0:
+          destination: pong.out
